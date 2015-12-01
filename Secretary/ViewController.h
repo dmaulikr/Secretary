@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITextFieldDelegate, UIGestureRecognizerDelegate>
 
+@property(nonatomic , weak) IBOutlet UITextField *textField;
 
 @end
 

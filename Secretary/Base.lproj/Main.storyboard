@@ -1,25 +1,147 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="r6Q-AC-wJO">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <animations/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mGb-XL-l4j">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="PyD-BC-dDS"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your bot token:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Lh-tG-TCN">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="4Lh-tG-TCN" secondAttribute="height" multiplier="67:6" id="s14-fy-kwa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="s14-fy-kwa"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="s14-fy-kwa"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4Lh-tG-TCN" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="66s-Dm-WAV"/>
+                            <constraint firstItem="r6Q-AC-wJO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="DqT-Ky-OmS"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="r6Q-AC-wJO" secondAttribute="bottom" id="JSR-WN-Rcq"/>
+                            <constraint firstItem="4Lh-tG-TCN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Kup-TI-HZj"/>
+                            <constraint firstItem="mGb-XL-l4j" firstAttribute="top" secondItem="4Lh-tG-TCN" secondAttribute="bottom" constant="8" id="TAj-L6-qQh"/>
+                            <constraint firstItem="mGb-XL-l4j" firstAttribute="centerY" secondItem="r6Q-AC-wJO" secondAttribute="centerY" id="X62-Gs-z01"/>
+                            <constraint firstItem="mGb-XL-l4j" firstAttribute="centerX" secondItem="r6Q-AC-wJO" secondAttribute="centerX" id="YEN-au-85Y"/>
+                            <constraint firstItem="mGb-XL-l4j" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="mjX-dz-Bix"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="r6Q-AC-wJO" secondAttribute="trailing" constant="-20" id="rO8-ne-ktF"/>
+                            <constraint firstItem="mGb-XL-l4j" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="v3p-ql-MGk"/>
+                            <constraint firstItem="r6Q-AC-wJO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="weN-N4-b5z"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="r6Q-AC-wJO"/>
+                                <exclude reference="mGb-XL-l4j"/>
+                                <exclude reference="4Lh-tG-TCN"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="JSR-WN-Rcq"/>
+                                <exclude reference="TAj-L6-qQh"/>
+                                <exclude reference="X62-Gs-z01"/>
+                                <exclude reference="YEN-au-85Y"/>
+                                <exclude reference="mjX-dz-Bix"/>
+                                <exclude reference="v3p-ql-MGk"/>
+                                <exclude reference="66s-Dm-WAV"/>
+                                <exclude reference="Kup-TI-HZj"/>
+                                <exclude reference="DqT-Ky-OmS"/>
+                                <exclude reference="rO8-ne-ktF"/>
+                                <exclude reference="weN-N4-b5z"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="r6Q-AC-wJO"/>
+                                <include reference="mGb-XL-l4j"/>
+                                <include reference="4Lh-tG-TCN"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="JSR-WN-Rcq"/>
+                                <include reference="TAj-L6-qQh"/>
+                                <include reference="X62-Gs-z01"/>
+                                <include reference="YEN-au-85Y"/>
+                                <include reference="mjX-dz-Bix"/>
+                                <include reference="v3p-ql-MGk"/>
+                                <include reference="66s-Dm-WAV"/>
+                                <include reference="Kup-TI-HZj"/>
+                                <include reference="DqT-Ky-OmS"/>
+                                <include reference="rO8-ne-ktF"/>
+                                <include reference="weN-N4-b5z"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="textField" destination="mGb-XL-l4j" id="pul-BW-fhs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="yof-ks-iTe">
+                    <connections>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="0yk-Yb-R1i"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="303.5" y="388.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="mb0-jn-bz0">
+            <objects>
+                <viewController id="nZJ-0n-AyC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uJb-eD-sux"/>
+                        <viewControllerLayoutGuide type="bottom" id="EI3-tq-8Pg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tDB-3j-67k">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="feL-a7-JLL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1000.5" y="438"/>
         </scene>
     </scenes>
 </document>
