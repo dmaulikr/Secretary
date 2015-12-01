@@ -16,6 +16,8 @@
 		11726F131C0DB0D400009B50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11726F111C0DB0D400009B50 /* LaunchScreen.storyboard */; };
 		11726F1E1C0DB0D400009B50 /* SecretaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11726F1D1C0DB0D400009B50 /* SecretaryTests.m */; };
 		11726F291C0DB0D400009B50 /* SecretaryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11726F281C0DB0D400009B50 /* SecretaryUITests.m */; };
+		11726F381C0DB92200009B50 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11726F371C0DB92200009B50 /* MainViewController.m */; };
+		11726F3A1C0DED7000009B50 /* TelegramBot.m in Sources */ = {isa = PBXBuildFile; fileRef = 11726F391C0DED7000009B50 /* TelegramBot.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		11726F241C0DB0D400009B50 /* SecretaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecretaryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11726F281C0DB0D400009B50 /* SecretaryUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecretaryUITests.m; sourceTree = "<group>"; };
 		11726F2A1C0DB0D400009B50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11726F361C0DB92200009B50 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		11726F371C0DB92200009B50 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		11726F391C0DED7000009B50 /* TelegramBot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TelegramBot.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,8 +110,11 @@
 			children = (
 				11726F031C0DB0D400009B50 /* AppDelegate.h */,
 				11726F041C0DB0D400009B50 /* AppDelegate.m */,
+				11726F361C0DB92200009B50 /* MainViewController.h */,
+				11726F371C0DB92200009B50 /* MainViewController.m */,
 				11726F061C0DB0D400009B50 /* ViewController.h */,
 				11726F071C0DB0D400009B50 /* ViewController.m */,
+				11726F391C0DED7000009B50 /* TelegramBot.m */,
 				11726F091C0DB0D400009B50 /* Main.storyboard */,
 				11726F0F1C0DB0D400009B50 /* Assets.xcassets */,
 				11726F111C0DB0D400009B50 /* LaunchScreen.storyboard */,
@@ -273,9 +281,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11726F3A1C0DED7000009B50 /* TelegramBot.m in Sources */,
 				11726F0E1C0DB0D400009B50 /* Secretary.xcdatamodeld in Sources */,
 				11726F081C0DB0D400009B50 /* ViewController.m in Sources */,
 				11726F051C0DB0D400009B50 /* AppDelegate.m in Sources */,
+				11726F381C0DB92200009B50 /* MainViewController.m in Sources */,
 				11726F021C0DB0D400009B50 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

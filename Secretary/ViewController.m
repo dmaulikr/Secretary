@@ -16,7 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    if ([[NSUserDefaults standardUserDefaults] stringForKey:@"botToken"] != nil){
+    NSString *botToken = [[NSUserDefaults standardUserDefaults] stringForKey:@"botToken"];
+    if (![botToken isEqualToString:@""]){
+        NSLog(botToken);
         [self performSegueWithIdentifier:@"tokenInputDone" sender:self];
     }
 }
@@ -38,5 +40,19 @@
         }
     }
 }
+
+-(void)goButtonPress:(id)sender {
+    NSString *botToken = self.textField.text;
+    if (![botToken isEqualToString:@""]){
+        [[NSUserDefaults standardUserDefaults] setObject:botToken forKey:@"botToken"];
+        [self performSegueWithIdentifier:@"tokenInputDone" sender:self];
+    }
+    else {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"No bot token" message:@"Please, enter your bot token" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+        [alertView show];
+    }
+}
+
+
 
 @end

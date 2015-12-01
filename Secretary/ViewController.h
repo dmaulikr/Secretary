@@ -12,5 +12,7 @@
 
 @property(nonatomic , weak) IBOutlet UITextField *textField;
 
+-(IBAction)goButtonPress:(id)sender;
+
 @end
 
