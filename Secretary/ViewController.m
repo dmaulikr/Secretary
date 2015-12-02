@@ -18,7 +18,7 @@
     [super viewDidLoad];
     NSString *botToken = [[NSUserDefaults standardUserDefaults] stringForKey:@"botToken"];
     if (![botToken isEqualToString:@""]){
-        NSLog(botToken);
+        NSLog(@"Performing segue");
         [self performSegueWithIdentifier:@"tokenInputDone" sender:self];
     }
 }
