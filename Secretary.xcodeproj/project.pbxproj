@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1115F67E1C107666000B5D80 /* MenuBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1115F67D1C107666000B5D80 /* MenuBarViewController.m */; };
+		113F37261C14C21F00D5D224 /* LeftSkideMenuSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 113F37251C14C21F00D5D224 /* LeftSkideMenuSegue.m */; };
 		11726F021C0DB0D400009B50 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11726F011C0DB0D400009B50 /* main.m */; };
 		11726F051C0DB0D400009B50 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11726F041C0DB0D400009B50 /* AppDelegate.m */; };
 		11726F081C0DB0D400009B50 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11726F071C0DB0D400009B50 /* ViewController.m */; };
@@ -18,6 +20,8 @@
 		11726F291C0DB0D400009B50 /* SecretaryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11726F281C0DB0D400009B50 /* SecretaryUITests.m */; };
 		11726F381C0DB92200009B50 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11726F371C0DB92200009B50 /* MainViewController.m */; };
 		11726F3A1C0DED7000009B50 /* TelegramBot.m in Sources */ = {isa = PBXBuildFile; fileRef = 11726F391C0DED7000009B50 /* TelegramBot.m */; };
+		119AAD371C12E5DA00F6071C /* SlideMenuSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 119AAD361C12E5DA00F6071C /* SlideMenuSegue.m */; };
+		11A6D0311C146F44005FC64F /* TelegramBotMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A6D0301C146F44005FC64F /* TelegramBotMessage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1115F67C1C107666000B5D80 /* MenuBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuBarViewController.h; sourceTree = "<group>"; };
+		1115F67D1C107666000B5D80 /* MenuBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuBarViewController.m; sourceTree = "<group>"; };
+		113F37241C14C21F00D5D224 /* LeftSkideMenuSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftSkideMenuSegue.h; sourceTree = "<group>"; };
+		113F37251C14C21F00D5D224 /* LeftSkideMenuSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftSkideMenuSegue.m; sourceTree = "<group>"; };
 		11726EFD1C0DB0D300009B50 /* Secretary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Secretary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11726F011C0DB0D400009B50 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		11726F031C0DB0D400009B50 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,6 +66,11 @@
 		11726F361C0DB92200009B50 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		11726F371C0DB92200009B50 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		11726F391C0DED7000009B50 /* TelegramBot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TelegramBot.m; sourceTree = "<group>"; };
+		119AAD351C12E5DA00F6071C /* SlideMenuSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideMenuSegue.h; sourceTree = "<group>"; };
+		119AAD361C12E5DA00F6071C /* SlideMenuSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideMenuSegue.m; sourceTree = "<group>"; };
+		11A6D02F1C146C80005FC64F /* ConstantsHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConstantsHeader.h; sourceTree = "<group>"; };
+		11A6D0301C146F44005FC64F /* TelegramBotMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TelegramBotMessage.m; sourceTree = "<group>"; };
+		11E6CFA61C117C98007737E8 /* SlideMenuDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideMenuDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,13 +121,12 @@
 		11726EFF1C0DB0D400009B50 /* Secretary */ = {
 			isa = PBXGroup;
 			children = (
+				11E6CFA81C117D09007737E8 /* Telegram Bot source */,
+				11E6CFA71C117CA7007737E8 /* Slide Menu source */,
 				11726F031C0DB0D400009B50 /* AppDelegate.h */,
 				11726F041C0DB0D400009B50 /* AppDelegate.m */,
-				11726F361C0DB92200009B50 /* MainViewController.h */,
-				11726F371C0DB92200009B50 /* MainViewController.m */,
 				11726F061C0DB0D400009B50 /* ViewController.h */,
 				11726F071C0DB0D400009B50 /* ViewController.m */,
-				11726F391C0DED7000009B50 /* TelegramBot.m */,
 				11726F091C0DB0D400009B50 /* Main.storyboard */,
 				11726F0F1C0DB0D400009B50 /* Assets.xcassets */,
 				11726F111C0DB0D400009B50 /* LaunchScreen.storyboard */,
@@ -149,6 +161,32 @@
 				11726F2A1C0DB0D400009B50 /* Info.plist */,
 			);
 			path = SecretaryUITests;
+			sourceTree = "<group>";
+		};
+		11E6CFA71C117CA7007737E8 /* Slide Menu source */ = {
+			isa = PBXGroup;
+			children = (
+				11A6D02F1C146C80005FC64F /* ConstantsHeader.h */,
+				11E6CFA61C117C98007737E8 /* SlideMenuDelegate.h */,
+				11726F361C0DB92200009B50 /* MainViewController.h */,
+				11726F371C0DB92200009B50 /* MainViewController.m */,
+				1115F67C1C107666000B5D80 /* MenuBarViewController.h */,
+				1115F67D1C107666000B5D80 /* MenuBarViewController.m */,
+				119AAD351C12E5DA00F6071C /* SlideMenuSegue.h */,
+				119AAD361C12E5DA00F6071C /* SlideMenuSegue.m */,
+				113F37241C14C21F00D5D224 /* LeftSkideMenuSegue.h */,
+				113F37251C14C21F00D5D224 /* LeftSkideMenuSegue.m */,
+			);
+			name = "Slide Menu source";
+			sourceTree = "<group>";
+		};
+		11E6CFA81C117D09007737E8 /* Telegram Bot source */ = {
+			isa = PBXGroup;
+			children = (
+				11726F391C0DED7000009B50 /* TelegramBot.m */,
+				11A6D0301C146F44005FC64F /* TelegramBotMessage.m */,
+			);
+			name = "Telegram Bot source";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,8 +320,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				11726F3A1C0DED7000009B50 /* TelegramBot.m in Sources */,
+				11A6D0311C146F44005FC64F /* TelegramBotMessage.m in Sources */,
 				11726F0E1C0DB0D400009B50 /* Secretary.xcdatamodeld in Sources */,
+				119AAD371C12E5DA00F6071C /* SlideMenuSegue.m in Sources */,
 				11726F081C0DB0D400009B50 /* ViewController.m in Sources */,
+				1115F67E1C107666000B5D80 /* MenuBarViewController.m in Sources */,
+				113F37261C14C21F00D5D224 /* LeftSkideMenuSegue.m in Sources */,
 				11726F051C0DB0D400009B50 /* AppDelegate.m in Sources */,
 				11726F381C0DB92200009B50 /* MainViewController.m in Sources */,
 				11726F021C0DB0D400009B50 /* main.m in Sources */,
@@ -512,6 +554,7 @@
 				11726F2F1C0DB0D400009B50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		11726F301C0DB0D400009B50 /* Build configuration list for PBXNativeTarget "SecretaryTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +563,7 @@
 				11726F321C0DB0D400009B50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		11726F331C0DB0D400009B50 /* Build configuration list for PBXNativeTarget "SecretaryUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +572,7 @@
 				11726F351C0DB0D400009B50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

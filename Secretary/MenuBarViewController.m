@@ -1,30 +1,25 @@
 //
-//  MainViewController.m
+//  MenuBarViewController.m
 //  Secretary
 //
-//  Created by Alexander on 01/12/15.
+//  Created by Alexander on 03/12/15.
 //  Copyright © 2015 Alexander Vorontsov. All rights reserved.
 //
 
+#import "MenuBarViewController.h"
 #import "MainViewController.h"
 
-
-
-
-@interface MainViewController (){
-    NSString *token;
-}
+@interface MenuBarViewController ()
 
 
 
 @end
 
-@implementation MainViewController
+@implementation MenuBarViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    token = [[NSUserDefaults standardUserDefaults] stringForKey:kBotTokenString];
-    NSLog(token);
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,7 +27,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+//
+#pragma mark perform segue
+//Performing segue
 
+-(void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
+
+}
 
 /*
 #pragma mark - Navigation

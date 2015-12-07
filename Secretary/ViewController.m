@@ -16,10 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSString *botToken = [[NSUserDefaults standardUserDefaults] stringForKey:@"botToken"];
+    NSString *botToken = [[NSUserDefaults standardUserDefaults] stringForKey:kBotTokenString];
     if (![botToken isEqualToString:@""]){
         NSLog(@"Performing segue");
-        [self performSegueWithIdentifier:@"tokenInputDone" sender:self];
+        [self performSegueWithIdentifier:kTokenInputDoneSegueString sender:self];
     }
 }
 
@@ -44,8 +44,8 @@
 -(void)goButtonPress:(id)sender {
     NSString *botToken = self.textField.text;
     if (![botToken isEqualToString:@""]){
-        [[NSUserDefaults standardUserDefaults] setObject:botToken forKey:@"botToken"];
-        [self performSegueWithIdentifier:@"tokenInputDone" sender:self];
+        [[NSUserDefaults standardUserDefaults] setObject:botToken forKey:kBotTokenString];
+        [self performSegueWithIdentifier:kTokenInputDoneSegueString sender:self];
     }
     else {
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"No bot token" message:@"Please, enter your bot token" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
